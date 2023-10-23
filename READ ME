@@ -1,0 +1,21 @@
+ARCHMAN CONFIGURATION WEB APPLICATION
+
+The purpose of this application is to allow admin users to change system configurations and UI configurations directly from the interface
+
+INSTALLATION
+- Install SimpleDL from https://github.com/slumou/simpledl.
+- Add the 'honoursProject' folder into directory where SimpleDL is stored
+
+USAGE
+- Change all paths to relevant configuration files being transform.xsl, style.css and config.pl in client and server if the current file paths are not correct to your folder set up.
+- Replace  transform.xsl, style.css and config.pl in the data folder with transformReplace.xsl ,  styleReplace.css and configReplace.pl. Replace files can be found in the honoursProject folder.
+
+- Using the terminal navigate to the server folder within honoursProject and type 'npm run dev' in terminal
+- Using the terminal navigate to the client folder within honoursProject and type 'npm start' in terminal
+- The configuration web application will open and one can start making configuration changes
+- Once configuration changes have been made type these commands into the terminal:
+    simpledl/bin/import.pl
+    simpledl/bin/index.pl
+    simpledl/bin/generate.pl --all
+- Reload the SimpleDL site
+
